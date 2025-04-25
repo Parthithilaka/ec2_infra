@@ -1,7 +1,8 @@
 name: Deploy Simple EC2 with CloudFormation
 
 on:
-  workflow_dispatch:  # Allows manual trigger from GitHub UI
+  repository_dispatch:
+    types: [deploy-infra]
 
 jobs:
   deploy:
