@@ -16,7 +16,7 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       InstanceType: t2.micro
-      KeyName: virgina.pem
+      KeyName: virgina
       ImageId: ami-084568db4383264d4  # Amazon Linux 2 AMI for us-east-1
       SecurityGroupIds:
         - !Ref SimpleSecurityGroup
